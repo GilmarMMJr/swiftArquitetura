@@ -18,7 +18,7 @@ class UserProvider: UserProviderProtocol {
     
     func login(parameters: [AnyHashable : Any], completionHandler: @escaping (Result<UserModel, Error>) -> Void) {
         let body: NSDictionary = parameters[Constants.ParametersKeys.body] as! NSDictionary
-        let userModel = body[Constants.ParametersKeys.body] as! UserModel
+        let userModel = body[Constants.ParametersKeys.userModel] as! UserModel
         
         self.auth.signIn(withEmail: userModel.email, password: userModel.password) {
             (result, error) in
@@ -32,7 +32,7 @@ class UserProvider: UserProviderProtocol {
     
     func register(parameters: [AnyHashable : Any], completionHandler: @escaping (Result<UserModel, Error>) -> Void) {
         let body: NSDictionary = parameters[Constants.ParametersKeys.body] as! NSDictionary
-        let userModel = body[Constants.ParametersKeys.body] as! UserModel
+        let userModel = body[Constants.ParametersKeys.userModel] as! UserModel
         
         self.auth.createUser(withEmail: userModel.email, password: userModel.password) {
             (result, error) in

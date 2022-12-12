@@ -3,7 +3,7 @@
   
 App criado no curso de arquiteturas.
 
-O objetivo e treinar a arquitetura MVC e foi desenvolvido um aplicativo de login com integraçao ao firebase, onde o mesmo usuario pode fazer um cadastro e logar no app.
+O objetivo é treinar a arquitetura MVC e foi desenvolvido um aplicativo de login com integraçao ao firebase, onde o usuario pode fazer um cadastro e logar no app.
 
 Assuntos abordados:
 * Firebase;
